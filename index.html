@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>星や宇宙を仕事に！ | 2026.6.13 東京国際交流館</title>
+  <meta name="description" content="星空ガイド、天文教育、宇宙ビジネス…。全国で「星」や「宇宙」に関わる活動をしている人たちが集まり、これから星や宇宙に関わりたい人へリアルな話やつながりを届けるイベントです。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="stars-canvas" id="starsCanvas"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">星や宇宙を仕事にしたいあなたへ</p>
+      <h1 class="hero-title">
+        「好き」で<br>終わらせない。
+      </h1>
+      <p class="hero-subtitle">
+        星と生きる未来のヒントを見つけるイベント
+      </p>
+      <div class="hero-meta">
+        <span class="hero-date">📅 2026年6月13日（土）14:00〜16:30</span>
+        <span class="hero-venue">📍 東京国際交流館プラザ平成 4階 会議室1</span>
+      </div>
+      <div class="hero-cta-group">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg class="icon-ig" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagramをフォローする
+        </a>
+        <a href="#apply" class="btn btn-apply">イベントに申し込む</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== INSTAGRAM CTA (PRIMARY) ===== -->
+  <section class="ig-section" id="instagram">
+    <div class="container">
+      <div class="ig-card">
+        <div class="ig-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="ig-text">
+          <p class="ig-step">STEP 1</p>
+          <h2 class="ig-title">まずはInstagramを<br>フォローしてください</h2>
+          <p class="ig-desc">
+            このイベントでは、最新情報をInstagramで発信しています。<br>
+            登壇ゲストの紹介・星の仕事のリアル・イベントの見どころ・宇宙業界の話・イベント裏話などをお届けしています。
+          </p>
+          <div class="ig-posts">
+            <div class="ig-post-tag">✨ 登壇ゲストの紹介</div>
+            <div class="ig-post-tag">🌟 星の仕事のリアル</div>
+            <div class="ig-post-tag">🔭 イベントの見どころ</div>
+            <div class="ig-post-tag">🚀 宇宙業界の話</div>
+            <div class="ig-post-tag">🎬 イベント裏話</div>
+          </div>
+          <p class="ig-note">イベント情報を見逃さないために、まずはフォローをお願いします。</p>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-instagram btn-lg">
+            <svg class="icon-ig" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagramをフォローする
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOR WHOM ===== -->
+  <section class="for-whom" id="for-whom">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">For Whom</p>
+        <h2 class="section-title">こんな人におすすめ</h2>
+      </div>
+      <div class="whom-grid">
+        <div class="whom-card">
+          <div class="whom-icon">⭐</div>
+          <p>星や宇宙が好き</p>
+        </div>
+        <div class="whom-card">
+          <div class="whom-icon">💼</div>
+          <p>いつか星に関わる仕事をしてみたい</p>
+        </div>
+        <div class="whom-card">
+          <div class="whom-icon">🚀</div>
+          <p>宇宙業界に興味がある</p>
+        </div>
+        <div class="whom-card">
+          <div class="whom-icon">🤝</div>
+          <p>星仲間と出会いたい</p>
+        </div>
+        <div class="whom-card">
+          <div class="whom-icon">🌱</div>
+          <p>自分の可能性を広げたい</p>
+        </div>
+      </div>
+      <p class="whom-note">学生の方から社会人まで、星や宇宙に関心のある方ならどなたでも参加できます。</p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Benefits</p>
+        <h2 class="section-title">このイベントで得られること</h2>
+      </div>
+      <div class="benefits-list">
+        <div class="benefit-item">
+          <div class="benefit-check">✔</div>
+          <p>星や宇宙の仕事の<strong>リアルがわかる</strong></p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✔</div>
+          <p>実際に活動している人と<strong>出会える</strong></p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✔</div>
+          <p>星仲間の<strong>ネットワークが広がる</strong></p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✔</div>
+          <p>将来の<strong>ヒントが見つかる</strong></p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✔</div>
+          <p>自分の夢への<strong>一歩が踏み出せる</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAM ===== -->
+  <section class="program" id="program">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Program</p>
+        <h2 class="section-title">イベント内容</h2>
+      </div>
+      <div class="program-grid">
+        <div class="program-card">
+          <div class="program-num">01</div>
+          <div class="program-icon">🎤</div>
+          <h3>ゲストによる<br>トークセッション</h3>
+          <p>星や宇宙に関わる仕事をしているゲストが登壇。活動のきっかけやリアルな経験を語ります。</p>
+        </div>
+        <div class="program-card">
+          <div class="program-num">02</div>
+          <div class="program-icon">💬</div>
+          <h3>参加型<br>パネルセッション</h3>
+          <p>登壇者と参加者で星の仕事の可能性や未来について語り合います。</p>
+        </div>
+        <div class="program-card">
+          <div class="program-num">03</div>
+          <div class="program-icon">🔭</div>
+          <h3>星の仕事<br>相談コーナー</h3>
+          <p>実際に星を仕事にしている先輩たちに直接相談できるコーナー。「どう始めたらいい？」など気軽に話せます。</p>
+        </div>
+        <div class="program-card">
+          <div class="program-num">04</div>
+          <div class="program-icon">🌠</div>
+          <h3>夢を叶える<br>ミニコーチング</h3>
+          <p>夢や目標を整理するミニコーチング体験。「星を仕事にする未来」を具体的にイメージしていきます。</p>
+        </div>
+        <div class="program-card">
+          <div class="program-num">05</div>
+          <div class="program-icon">🖼️</div>
+          <h3>展示コーナー</h3>
+          <p>星や宇宙に関する活動紹介、写真やポスター展示などを予定しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENT INFO ===== -->
+  <section class="event-info" id="info">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Event Info</p>
+        <h2 class="section-title">イベント概要</h2>
+      </div>
+      <div class="info-table-wrap">
+        <table class="info-table">
+          <tbody>
+            <tr>
+              <th>イベント名</th>
+              <td>星や宇宙を仕事に！</td>
+            </tr>
+            <tr>
+              <th>日時</th>
+              <td>2026年6月13日（土）14:00〜16:30</td>
+            </tr>
+            <tr>
+              <th>会場</th>
+              <td>東京国際交流館プラザ平成<br><span class="td-sub">4階 会議室1</span></td>
+            </tr>
+            <tr>
+              <th>参加費</th>
+              <td>2,000円 / 人<br><span class="td-sub">（配信チケットも予定）</span></td>
+            </tr>
+            <tr>
+              <th>定員</th>
+              <td>約50名</td>
+            </tr>
+            <tr>
+              <th>申込み</th>
+              <td>事前申込み制（オンライン）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PURPOSE ===== -->
+  <section class="purpose" id="purpose">
+    <div class="container">
+      <div class="purpose-inner">
+        <div class="section-header">
+          <p class="section-label">Purpose</p>
+          <h2 class="section-title">イベントの目的</h2>
+        </div>
+        <p class="purpose-lead">
+          全国で星や宇宙の活動をしている個人・団体・企業がつながることで、
+          それぞれの活動に活かせるアイデア、地域活性につながる取り組み、次世代の宇宙教育などが生まれる場をつくることを目指しています。
+        </p>
+        <div class="purpose-highlight">
+          <p>星を愛する人たちがつながる<br><strong>「星仲間のネットワーク」</strong>を<br>このイベントから広げていきたいと考えています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPLY ===== -->
+  <section class="apply" id="apply">
+    <div class="container">
+      <div class="apply-flow">
+        <div class="flow-step flow-step--active">
+          <div class="flow-num">STEP 1</div>
+          <div class="flow-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <p class="flow-label">Instagramをフォロー</p>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-instagram">フォローする</a>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">STEP 2</div>
+          <div class="flow-icon flow-icon--star">⭐</div>
+          <p class="flow-label">イベントに申し込む</p>
+          <a href="#" class="btn btn-apply btn-lg">申込みはこちら<br><span class="btn-sub">（近日公開予定）</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTAGRAM CTA (SECONDARY) ===== -->
+  <section class="ig-section ig-section--bottom" id="latest">
+    <div class="container">
+      <div class="ig-card ig-card--bottom">
+        <div class="ig-text">
+          <p class="section-label">Latest Info</p>
+          <h2 class="ig-title">最新情報はこちら</h2>
+          <p class="ig-desc">
+            登壇ゲストの発表やイベント詳細はInstagramで順次公開しています。<br>
+            ぜひフォローして最新情報をチェックしてください。
+          </p>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-instagram btn-lg">
+            <svg class="icon-ig" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagramをフォローする
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-title">星や宇宙を仕事に！</p>
+        <p class="footer-date">2026年6月13日（土）14:00〜16:30</p>
+        <p class="footer-venue">東京国際交流館プラザ平成 4階 会議室1</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 星や宇宙を仕事に！ All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING CTA ===== -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-instagram">
+      <svg class="icon-ig" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      フォローする
+    </a>
+    <a href="#apply" class="btn btn-apply">申し込む</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
